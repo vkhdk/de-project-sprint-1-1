@@ -8,4 +8,4 @@
 
 | Файл | Описание |
 |----------|----------|
-|[notes.md](https://github.com/vkhdk/de-project-sprint-1-1/blob/main/notes.md) | Файл с заметками и комментариями по спринту |
+|[notes.md](https://github.com/vkhdk/de-project-sprint-1-1/blob/main/notes.md) | Файл с заметками и комментариями по проекту |
