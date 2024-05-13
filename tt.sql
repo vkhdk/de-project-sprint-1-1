@@ -110,5 +110,10 @@ FROM new_customers AS nc
         AND nc.report_period = tpm.report_period 
         AND tpm.rn = 1
     LEFT JOIN new_customer_all_period_ltv AS ltv 
-        ON nc.customer_id = ltv.customer_id)
+        ON nc.customer_id = ltv.customer_id),
+old_customers_id AS ( -- идентификаторы клиентов, которые уже были в витрине
+    SELECT 
+        dd.customer_id
+    FROM dwh_delta AS dd
+    WHERE dd.exist_customer_id IS NOT NULL),
 SELECT * FROM insert_new_customers
